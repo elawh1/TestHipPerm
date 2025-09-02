@@ -1,0 +1,1518 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 4.18.0-553.69.1.el8_10.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/3.26.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/3.26.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12598/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12598.dir/build.make CMakeFiles/cmTC_12598.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4'
+        Building C object CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc   -v -o CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        mpigcc for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12598.dir/'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1 -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_12598.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccNqOkG7.s
+        GNU C17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include
+         /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include
+         /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include
+         /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include
+         /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include
+         /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: eb9da8c5fe52692d3913af6ea9db8626
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12598.dir/'
+         as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o /tmp/ccNqOkG7.s
+        GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_12598
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12598.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc  -v CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o -o cmTC_12598 
+        mpigcc for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12598' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12598.'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQPTxR9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_12598 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12598' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12598.'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+          add: [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+          add: [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+          add: [/sw/eb/sw/GCCcore/13.3.0/include]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+        collapse include dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include] ==> [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+        collapse include dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/include] ==> [/sw/eb/sw/GCCcore/13.3.0/include]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include;/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include;/sw/eb/sw/GCCcore/13.3.0/include;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12598/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12598.dir/build.make CMakeFiles/cmTC_12598.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Pg5Gb4']
+        ignore line: [Building C object CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc   -v -o CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [mpigcc for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12598.dir/']
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1 -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_12598.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccNqOkG7.s]
+        ignore line: [GNU C17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+        ignore line: [ /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+        ignore line: [ /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: eb9da8c5fe52692d3913af6ea9db8626]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12598.dir/']
+        ignore line: [ as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o /tmp/ccNqOkG7.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_12598]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12598.dir/link.txt --verbose=1]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc  -v CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o -o cmTC_12598 ]
+        ignore line: [mpigcc for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12598' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12598.']
+        link line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQPTxR9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_12598 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccQPTxR9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_12598] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o] ==> obj [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..]
+          arg [CMakeFiles/cmTC_12598.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-lmpifort] ==> lib [mpifort]
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znoexecstack] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o] ==> obj [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> [/sw/eb/sw/GCCcore/13.3.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> [/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit libs: [mpifort;mpi;rt;pthread;dl;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0;/sw/eb/sw/GCCcore/13.3.0/lib64;/lib64;/usr/lib64;/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib;/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib;/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib;/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_46c43/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46c43.dir/build.make CMakeFiles/cmTC_46c43.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk'
+        Building CXX object CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -v -o CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        mpigxx for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c43.dir/'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1plus -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_46c43.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cclZRfZd.s
+        GNU C++17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include
+         /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include
+         /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include
+         /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include
+         /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include
+         /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/x86_64-pc-linux-gnu
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/backward
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 53fb0c45b62cf521366c882a4f6b07af
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c43.dir/'
+         as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o /tmp/cclZRfZd.s
+        GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_46c43
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c43.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx  -v CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_46c43 
+        mpigxx for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=g++
+        COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_46c43' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_46c43.'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxwNcnj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_46c43 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpicxx -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_46c43' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_46c43.'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+          add: [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+          add: [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/x86_64-pc-linux-gnu]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/backward]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+          add: [/sw/eb/sw/GCCcore/13.3.0/include]
+          add: [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+        collapse include dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include] ==> [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+        collapse include dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0] ==> [/sw/eb/sw/GCCcore/13.3.0/include/c++/13.3.0]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/x86_64-pc-linux-gnu] ==> [/sw/eb/sw/GCCcore/13.3.0/include/c++/13.3.0/x86_64-pc-linux-gnu]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/backward] ==> [/sw/eb/sw/GCCcore/13.3.0/include/c++/13.3.0/backward]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/include] ==> [/sw/eb/sw/GCCcore/13.3.0/include]
+        collapse include dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include;/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include;/sw/eb/sw/GCCcore/13.3.0/include/c++/13.3.0;/sw/eb/sw/GCCcore/13.3.0/include/c++/13.3.0/x86_64-pc-linux-gnu;/sw/eb/sw/GCCcore/13.3.0/include/c++/13.3.0/backward;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include;/sw/eb/sw/GCCcore/13.3.0/include;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_46c43/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46c43.dir/build.make CMakeFiles/cmTC_46c43.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-J0mtQk']
+        ignore line: [Building CXX object CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -v -o CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [mpigxx for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c43.dir/']
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1plus -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_46c43.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cclZRfZd.s]
+        ignore line: [GNU C++17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+        ignore line: [ /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+        ignore line: [ /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/backward]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 53fb0c45b62cf521366c882a4f6b07af]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c43.dir/']
+        ignore line: [ as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o /tmp/cclZRfZd.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_46c43]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c43.dir/link.txt --verbose=1]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx  -v CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_46c43 ]
+        ignore line: [mpigxx for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_46c43' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_46c43.']
+        link line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxwNcnj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_46c43 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpicxx -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxwNcnj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_46c43] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o] ==> obj [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..]
+          arg [CMakeFiles/cmTC_46c43.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-lmpicxx] ==> lib [mpicxx]
+          arg [-lmpifort] ==> lib [mpifort]
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znoexecstack] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o] ==> obj [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> [/sw/eb/sw/GCCcore/13.3.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> [/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit libs: [mpicxx;mpifort;mpi;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0;/sw/eb/sw/GCCcore/13.3.0/lib64;/lib64;/usr/lib64;/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib;/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib;/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib;/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:27 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-4ysuTs"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-4ysuTs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-4ysuTs
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d6381/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6381.dir/build.make CMakeFiles/cmTC_d6381.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-4ysuTs'
+        Building CXX object CMakeFiles/cmTC_d6381.dir/test_mpi.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -std=c++17 -o CMakeFiles/cmTC_d6381.dir/test_mpi.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-4ysuTs/test_mpi.cpp
+        Linking CXX executable cmTC_d6381
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6381.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_d6381.dir/test_mpi.cpp.o -o cmTC_d6381 
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-4ysuTs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:33 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_516c0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_516c0.dir/build.make CMakeFiles/cmTC_516c0.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT'
+        Building C object CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc   -fopenmp -v -o CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT/OpenMPTryFlag.c
+        mpigcc for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_516c0.dir/'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1 -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include -D_REENTRANT /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_516c0.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/cc5OfQ9H.s
+        GNU C17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include
+         /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include
+         /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include
+         /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include
+         /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include
+         /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: eb9da8c5fe52692d3913af6ea9db8626
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_516c0.dir/'
+         as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o /tmp/cc5OfQ9H.s
+        GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_516c0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_516c0.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc  -fopenmp -v CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o -o cmTC_516c0  -v 
+        mpigcc for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        mpigcc for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        Reading specs from /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_516c0' '-v' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_516c0.'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ktYyJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_516c0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_516c0' '-v' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_516c0.'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:33 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_516c0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_516c0.dir/build.make CMakeFiles/cmTC_516c0.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT']
+        ignore line: [Building C object CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc   -fopenmp -v -o CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT/OpenMPTryFlag.c]
+        ignore line: [mpigcc for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_516c0.dir/']
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1 -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include -D_REENTRANT /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-89oqcT/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_516c0.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/cc5OfQ9H.s]
+        ignore line: [GNU C17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+        ignore line: [ /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+        ignore line: [ /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: eb9da8c5fe52692d3913af6ea9db8626]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_516c0.dir/']
+        ignore line: [ as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o /tmp/cc5OfQ9H.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_516c0]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_516c0.dir/link.txt --verbose=1]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc  -fopenmp -v CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o -o cmTC_516c0  -v ]
+        ignore line: [mpigcc for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [mpigcc for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_516c0' '-v' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_516c0.']
+        link line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ktYyJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_516c0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadend.o]
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc8ktYyJ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_516c0] ==> ignore
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..]
+          arg [CMakeFiles/cmTC_516c0.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-lmpifort] ==> lib [mpifort]
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znoexecstack] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> [/sw/eb/sw/GCCcore/13.3.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> [/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit libs: [mpifort;mpi;rt;pthread;dl;gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0;/sw/eb/sw/GCCcore/13.3.0/lib64;/lib64;/usr/lib64;/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib;/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib;/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib;/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:33 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a747b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a747b.dir/build.make CMakeFiles/cmTC_a747b.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy'
+        Building CXX object CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy/OpenMPTryFlag.cpp
+        mpigxx for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a747b.dir/'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1plus -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include -D_GNU_SOURCE -D_REENTRANT /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_a747b.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=c++17 -version -fopenmp -o /tmp/ccOOX4nd.s
+        GNU C++17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include
+         /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include
+         /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include
+         /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include
+         /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include
+         /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/x86_64-pc-linux-gnu
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/backward
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/include
+         /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 53fb0c45b62cf521366c882a4f6b07af
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a747b.dir/'
+         as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o /tmp/ccOOX4nd.s
+        GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_a747b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a747b.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx  -fopenmp -v CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o -o cmTC_a747b  -v 
+        mpigxx for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        mpigxx for the Intel(R) MPI Library 2021.13 for Linux*
+        Copyright Intel Corporation.
+        Using built-in specs.
+        COLLECT_GCC=g++
+        COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/
+        Reading specs from /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_a747b' '-v' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a747b.'
+         /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc62e6r6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a747b /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpicxx -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_a747b' '-v' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a747b.'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:33 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a747b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a747b.dir/build.make CMakeFiles/cmTC_a747b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy/OpenMPTryFlag.cpp]
+        ignore line: [mpigxx for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a747b.dir/']
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/cc1plus -quiet -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include -D_GNU_SOURCE -D_REENTRANT /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-ebUZxy/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_a747b.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=c++17 -version -fopenmp -o /tmp/ccOOX4nd.s]
+        ignore line: [GNU C++17 (GCC) version 13.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include]
+        ignore line: [ /sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/include]
+        ignore line: [ /sw/eb/sw/binutils/2.42-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../include/c++/13.3.0/backward]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/include]
+        ignore line: [ /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 53fb0c45b62cf521366c882a4f6b07af]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a747b.dir/']
+        ignore line: [ as -v -I /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include --64 -o CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o /tmp/ccOOX4nd.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o' '-c' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_a747b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a747b.dir/link.txt --verbose=1]
+        ignore line: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx  -fopenmp -v CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o -o cmTC_a747b  -v ]
+        ignore line: [mpigxx for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [mpigxx for the Intel(R) MPI Library 2021.13 for Linux*]
+        ignore line: [Copyright Intel Corporation.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/sw/eb/sw/GCCcore/13.3.0 --with-local-prefix=/sw/eb/sw/GCCcore/13.3.0 --enable-bootstrap --with-isl=/tmp/baum/easybuild/GCCcore/13.3.0/system-system/gcc-13.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib/:/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib/:/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/:/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/:/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib/:/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib/:/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/:/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/:/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_a747b' '-v' '-I' '/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/include' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a747b.']
+        link line: [ /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2 -plugin /sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so -plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc62e6r6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a747b /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtbegin.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadbegin.o -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0 -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib -L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib -L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib -L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib -L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib -L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib -L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib -L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../.. CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o --enable-new-dtags -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -rpath /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib -lmpicxx -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtend.o /lib/../lib64/crtn.o /sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/crtoffloadend.o]
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/eb/sw/GCCcore/13.3.0/libexec/gcc/x86_64-pc-linux-gnu/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc62e6r6.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a747b] ==> ignore
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+          arg [-L/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+          arg [-L/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+          arg [-L/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+          arg [-L/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+          arg [-L/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..]
+          arg [CMakeFiles/cmTC_a747b.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> ignore
+          arg [-lmpicxx] ==> lib [mpicxx]
+          arg [-lmpifort] ==> lib [mpifort]
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znoexecstack] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib/../lib64] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0] ==> [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../../../lib64] ==> [/sw/eb/sw/GCCcore/13.3.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib]
+        collapse library dir [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib] ==> [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib]
+        collapse library dir [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib]
+        collapse library dir [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> [/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib]
+        collapse library dir [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib] ==> [/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib]
+        collapse library dir [/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0/../../..] ==> [/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit libs: [mpicxx;mpifort;mpi;rt;pthread;dl;stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib64;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib64;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib64;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib64;/sw/eb/sw/GCCcore/13.3.0/lib/gcc/x86_64-pc-linux-gnu/13.3.0;/sw/eb/sw/GCCcore/13.3.0/lib64;/lib64;/usr/lib64;/sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/opt/mpi/libfabric/lib;/sw/eb/sw/UCX/1.16.0-GCCcore-13.3.0/lib;/sw/eb/sw/numactl/2.0.18-GCCcore-13.3.0/lib;/sw/eb/sw/intel-compilers/2024.2.0/tbb/2021.13/lib;/sw/eb/sw/intel-compilers/2024.2.0/compiler/2024.2/lib;/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/lib;/sw/eb/sw/zlib/1.3.1-GCCcore-13.3.0/lib;/sw/eb/sw/GCCcore/13.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:33 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-3w3fNO"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-3w3fNO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-3w3fNO
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_66852/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66852.dir/build.make CMakeFiles/cmTC_66852.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-3w3fNO'
+        Building C object CMakeFiles/cmTC_66852.dir/OpenMPCheckVersion.c.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc   -fopenmp -o CMakeFiles/cmTC_66852.dir/OpenMPCheckVersion.c.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-3w3fNO/OpenMPCheckVersion.c
+        Linking C executable cmTC_66852
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66852.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicc  -fopenmp CMakeFiles/cmTC_66852.dir/OpenMPCheckVersion.c.o -o cmTC_66852 
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-3w3fNO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:33 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-aKRQYx"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-aKRQYx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-aKRQYx
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f860/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f860.dir/build.make CMakeFiles/cmTC_7f860.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-aKRQYx'
+        Building CXX object CMakeFiles/cmTC_7f860.dir/OpenMPCheckVersion.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -fopenmp -std=c++17 -o CMakeFiles/cmTC_7f860.dir/OpenMPCheckVersion.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-aKRQYx/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_7f860
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f860.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx  -fopenmp CMakeFiles/cmTC_7f860.dir/OpenMPCheckVersion.cpp.o -o cmTC_7f860 
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-aKRQYx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:238 (check_cxx_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "CMakeLists.txt:60 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-6UpiPr"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-6UpiPr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-6UpiPr
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92808/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_92808.dir/build.make CMakeFiles/cmTC_92808.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-6UpiPr'
+        Building CXX object CMakeFiles/cmTC_92808.dir/src.cxx.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++17   -fvisibility=hidden -o CMakeFiles/cmTC_92808.dir/src.cxx.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-6UpiPr/src.cxx
+        Linking CXX executable cmTC_92808
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92808.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_92808.dir/src.cxx.o -o cmTC_92808 
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-6UpiPr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:239 (check_cxx_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "CMakeLists.txt:60 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-xVvBFJ"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-xVvBFJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-xVvBFJ
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82479/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_82479.dir/build.make CMakeFiles/cmTC_82479.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-xVvBFJ'
+        Building CXX object CMakeFiles/cmTC_82479.dir/src.cxx.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++17   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_82479.dir/src.cxx.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-xVvBFJ/src.cxx
+        Linking CXX executable cmTC_82479
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82479.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_82479.dir/src.cxx.o -o cmTC_82479 
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-xVvBFJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:206 (check_cxx_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "CMakeLists.txt:60 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c51f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1c51f.dir/build.make CMakeFiles/cmTC_1c51f.dir/build
+        gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9'
+        Building CXX object CMakeFiles/cmTC_1c51f.dir/src.cxx.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++17 -o CMakeFiles/cmTC_1c51f.dir/src.cxx.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9/src.cxx
+        /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9/src.cxx: In function ‘int main()’:
+        /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9/src.cxx:1:37: note: declared here
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        Linking CXX executable cmTC_1c51f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c51f.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_1c51f.dir/src.cxx.o -o cmTC_1c51f 
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-1BHUe9'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:27 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0078f/fast && gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0078f.dir/build.make CMakeFiles/cmTC_0078f.dir/build
+        gmake[2]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W'
+        Building CXX object CMakeFiles/cmTC_0078f.dir/test_mpi.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -std=c++17 -o CMakeFiles/cmTC_0078f.dir/test_mpi.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W/test_mpi.cpp
+        Linking CXX executable cmTC_0078f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0078f.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_0078f.dir/test_mpi.cpp.o -o cmTC_0078f 
+        gmake[2]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-DCE41W'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:27 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b97af/fast && gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b97af.dir/build.make CMakeFiles/cmTC_b97af.dir/build
+        gmake[2]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh'
+        Building CXX object CMakeFiles/cmTC_b97af.dir/test_mpi.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -std=c++17 -o CMakeFiles/cmTC_b97af.dir/test_mpi.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh/test_mpi.cpp
+        Linking CXX executable cmTC_b97af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b97af.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_b97af.dir/test_mpi.cpp.o -o cmTC_b97af 
+        gmake[2]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-rfgduh'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:27 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_63518/fast && gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_63518.dir/build.make CMakeFiles/cmTC_63518.dir/build
+        gmake[2]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G'
+        Building CXX object CMakeFiles/cmTC_63518.dir/test_mpi.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -std=c++17 -o CMakeFiles/cmTC_63518.dir/test_mpi.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G/test_mpi.cpp
+        Linking CXX executable cmTC_63518
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63518.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_63518.dir/test_mpi.cpp.o -o cmTC_63518 
+        gmake[2]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-pmYI2G'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:27 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52413/fast && gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_52413.dir/build.make CMakeFiles/cmTC_52413.dir/build
+        gmake[2]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7'
+        Building CXX object CMakeFiles/cmTC_52413.dir/test_mpi.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -std=c++17 -o CMakeFiles/cmTC_52413.dir/test_mpi.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7/test_mpi.cpp
+        Linking CXX executable cmTC_52413
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52413.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_52413.dir/test_mpi.cpp.o -o cmTC_52413 
+        gmake[2]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-femPs7'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:27 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF"
+      binary: "/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -fsanitize=address"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_796dc/fast && gmake[1]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_796dc.dir/build.make CMakeFiles/cmTC_796dc.dir/build
+        gmake[2]: Entering directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF'
+        Building CXX object CMakeFiles/cmTC_796dc.dir/test_mpi.cpp.o
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx   -std=c++17 -o CMakeFiles/cmTC_796dc.dir/test_mpi.cpp.o -c /home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF/test_mpi.cpp
+        Linking CXX executable cmTC_796dc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_796dc.dir/link.txt --verbose=1
+        /sw/eb/sw/impi/2021.13.0-intel-compilers-2024.2.0/mpi/2021.13/bin/mpicxx CMakeFiles/cmTC_796dc.dir/test_mpi.cpp.o -o cmTC_796dc 
+        gmake[2]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF'
+        gmake[1]: Leaving directory '/home/ehassani/projects/private-combblas/CombBLAS/_build/CMakeFiles/CMakeScratch/TryCompile-Z7BxJF'
+        
+      exitCode: 0
+...
