@@ -1,2 +1,0 @@
-/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/bin/ar qc libCombBLAS.a CMakeFiles/CombBLAS.dir/src/CommGrid.cpp.o CMakeFiles/CombBLAS.dir/src/mmio.c.o CMakeFiles/CombBLAS.dir/src/MPIType.cpp.o CMakeFiles/CombBLAS.dir/src/MPIOp.cpp.o CMakeFiles/CombBLAS.dir/src/MemoryPool.cpp.o CMakeFiles/CombBLAS.dir/src/hash.cpp.o
-/sw/eb/sw/binutils/2.42-GCCcore-13.3.0/bin/ranlib libCombBLAS.a
