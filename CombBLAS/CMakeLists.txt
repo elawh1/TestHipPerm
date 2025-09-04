@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20...4.0)
-project(CombBLAS VERSION 2.0.1 LANGUAGES C CXX)
+project(CombBLAS-HipPerm VERSION 2.0-hipperm-0.1 LANGUAGES C CXX)
 
 # require c++17
 set(CMAKE_CXX_STANDARD 17)
@@ -9,8 +9,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS_DEBUG "-g -fsanitize=address")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
-include(GNUInstallDirs)
-
 # Main CombBLAS library
 add_library(CombBLAS src/CommGrid.cpp src/mmio.c src/MPIType.cpp src/MPIOp.cpp src/MemoryPool.cpp src/hash.cpp)
 
@@ -19,7 +17,6 @@ add_library(CombBLAS src/CommGrid.cpp src/mmio.c src/MPIType.cpp src/MPIOp.cpp s
 target_include_directories(CombBLAS PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/psort-1.0/include>
-        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
         PRIVATE include/CombBLAS
 )
 
@@ -60,45 +57,7 @@ include(GenerateExportHeader)
 generate_export_header(CombBLAS)
 set_target_properties(CombBLAS PROPERTIES VERSION ${CombBLAS_VERSION})
 
-# installation
-install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-install(DIRECTORY psort-1.0/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-install(TARGETS CombBLAS EXPORT CombBLASTargets)
-
 include(CMakePackageConfigHelpers)
-
-configure_package_config_file(cmake/CombBLASConfig.cmake
-        "${CMAKE_CURRENT_BINARY_DIR}/CombBLAS/CombBLASConfig.cmake"
-        INSTALL_DESTINATION ${ConfigPackageLocation}
-)
-write_basic_package_version_file(
-    "${CMAKE_CURRENT_BINARY_DIR}/CombBLAS/CombBLASConfigVersion.cmake"
-    VERSION ${CombBLAS_VERSION}
-    COMPATIBILITY AnyNewerVersion
-)
-install(EXPORT CombBLASTargets
-        FILE
-        CombBLASTargets.cmake
-        NAMESPACE
-        CombBLAS::
-        DESTINATION
-        ${ConfigPackageLocation}
-)
-
-# The following command allow for option 2.
-export(EXPORT CombBLASTargets
-       FILE "${CMAKE_CURRENT_BINARY_DIR}/CombBLAS/CombBLASTargets.cmake"
-       NAMESPACE CombBLAS::
-       )
-install(
-    FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/CombBLAS/CombBLASConfig.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/CombBLAS/CombBLASConfigVersion.cmake"
-    DESTINATION
-    ${ConfigPackageLocation}
-    COMPONENT
-    Devel
-)
 
 # Testing
 enable_testing()
