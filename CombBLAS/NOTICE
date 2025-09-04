@@ -1,0 +1,14 @@
+NOTICE
+------
+
+This repository contains a modified version of the Combinatorial BLAS (CombBLAS) library.
+
+Modifications in this repository (CombBLAS-HipPerm):
+  - Added the HipPerm framework for distributed sparse matrix operations:
+      * HipPerm: permutation of rows/columns in sparse matrices
+      * HipExtract: extraction of submatrices
+      * HipAssign: assignment of sparse submatrices into larger distributed matrices
+  - Build system simplified: removed `_install/` logic from CMake
+
+All original rights, terms, and conditions from CombBLAS remain in effect (see LICENSE).
+This repository is not an official release of the CombBLAS project.
