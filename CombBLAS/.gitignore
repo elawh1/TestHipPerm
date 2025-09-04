@@ -33,3 +33,4 @@ CLAUDE.md
 CombBLAS_HipPerm/Applications/Fall2014Runs/
 CombBLAS_HipPerm/Applications/**/Runs/
 CombBLAS_HipPerm/**/logs/
+*.DS_Store
